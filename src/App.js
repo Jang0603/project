@@ -13,6 +13,7 @@ import Footer from './components/footer';
 import SlideShow from './components/banner';
 import LoginForm from './routes/login';
 import SignIn from './routes/sign';
+import MyPage from './routes/mypage';
 
 
 
@@ -31,6 +32,9 @@ function App() {
             <li>
               <Link to="/loginform">로그인</Link>
             </li>
+            <li>
+              <Link to="/mypage">마이페이지</Link>
+            </li>
           
           </ul>
         </nav>
@@ -40,6 +44,8 @@ function App() {
           <Route path="/box-office/:movieCd" element={<BoxOfficePage />} />
           <Route path="/loginform" element={<LoginForm />} />
           <Route path="/signin"  element={<SignIn />} />
+          <Route path="/mypage"  element={<MyPage />} />
+          
           
           
 
