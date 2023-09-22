@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom'; // useNavigate로 변경
+import { Link, useNavigate } from 'react-router-dom'; 
 import './login.css';
 
 const LoginForm = () => {
@@ -7,14 +7,14 @@ const LoginForm = () => {
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const [errorCount, setErrorCount] = useState(0);
-  const navigate = useNavigate(); // useNavigate hook을 사용하여 navigate 함수 생성
+  const navigate = useNavigate(); 
 
   const handleLogin = () => {
     if (id === 'thtm') {
       if (password === '0000') {
         alert('로그인 되었습니다!');
-        // 로그인 성공 시 경로를 변경
-        navigate('/mypage'); // navigate 함수를 사용하여 경로 변경
+        
+        navigate('/mypage'); 
       } else {
         setErrorMessage('아이디와 비밀번호를 다시 확인해주세요.');
         setErrorCount(errorCount + 1);
