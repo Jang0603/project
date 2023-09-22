@@ -11,6 +11,9 @@ import VideoPlayer from './components/teaser';
 import VideoPlayer2 from './components/teaser2';
 import Footer from './components/footer';
 import SlideShow from './components/banner';
+import LoginForm from './routes/login';
+import SignIn from './routes/sign';
+
 
 
 function App() {
@@ -25,12 +28,21 @@ function App() {
             <li>
               <Link to="/box-office">주간/주말 박스오피스</Link>
             </li>
+            <li>
+              <Link to="/loginform">로그인</Link>
+            </li>
+          
           </ul>
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/box-office" element={<BoxOffice />} />
           <Route path="/box-office/:movieCd" element={<BoxOfficePage />} />
+          <Route path="/loginform" element={<LoginForm />} />
+          <Route path="/signin"  element={<SignIn />} />
+          
+          
+
         </Routes>
       </div>
     </Router>
@@ -66,6 +78,7 @@ function Home() {
         <article>
           <VideoPlayer />      
           <VideoPlayer2 />
+          
         </article>
         <div>
           <nav>
@@ -77,7 +90,13 @@ function Home() {
             <h3>영화 예매</h3>
             <SlideShow />          
           </nav>
+          <nav className='right2'>
+            
+          </nav>
+
         </div>
+  
+  
       </div>
       
       <div>

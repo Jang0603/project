@@ -130,6 +130,13 @@
 
 .right h3 {
   position: absolute;
-  top: 200px;
+  top: 190px;
   right: 30px;
+}
+
+.right2 {
+  position: absolute;
+  top: 300px;
+  right: 30px;
+
 }
